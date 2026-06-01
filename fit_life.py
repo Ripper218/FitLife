@@ -17,8 +17,7 @@ user_height = float(input('Ваш рост (в метрах, например 1.
 # на входе - рост и вес
 # на выходе - индекс массы тела с одним знаком после запятой
 def _calculate_bmi(user_weight, user_height):
-    bmi = round(user_weight / (user_height ** 2), 1)
-    return bmi
+    return round(user_weight / (user_height ** 2), 1)
 
 
 # Подсчет воды: вес * 30 мл(сразу делим на 1000 чтоб перевести в литры)
