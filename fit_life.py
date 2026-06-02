@@ -32,7 +32,7 @@ if __name__ == '__main__':
             USER_AGE = int(input('Сколько вам полных лет?'
                                  '(укажите целое число) '))
             break
-        except Exception:
+        except ValueError:
             print('Похоже вы ввели возраст не в том формате, \n'
                   'Нужно указать целое число, например: 18 \n')
     while True:
@@ -44,7 +44,7 @@ if __name__ == '__main__':
             user_height = input('Ваш рост (в метрах, например 1.75): ')
             user_height = float(user_height.replace(',', '.'))
             break
-        except Exception:
+        except ValueError:
             print('Похоже вы ввели данные не в том формате, \n'
                   'Нужно указать число, можно с точностью до сотых.'
                   'Например: 123.12 \n')
